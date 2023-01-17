@@ -1,38 +1,58 @@
-.App {
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 2px auto;
+  
+}
+.flex-col *+*{
+  margin-top: 2rem;
+}
+Button {
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  height: 3rem;
+  background-color: rgb(182, 205, 214);
+  border: none;
+  
+}
+input::placeholder{
+
+  color: rgb(9, 35, 87);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h1
+{
+  background-color: aliceblue;
+  font-size: 32px;
+  line-height: 150px;
+  text-shadow: -1px -1px rgb(163, 186, 196), 1px 1px rgb(92, 165, 194), -3px 0 4px #000;
+  font-family:"Segoe print", Arial, Helvetica, sans-serif;
+  color: skyblue; 
+  padding:32px;
+  font-weight:lighter;
+  -moz-box-shadow: 2px 2px 6px #888;  
+  -webkit-box-shadow: 2px 2px 6px #888;  
+  box-shadow:2px 2px 6px #888;  
+  text-align:center;
+  display:inline;
 }
